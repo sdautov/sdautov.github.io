@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ page.internationalization.lang }}">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f4bb.png">
+        <link rel="stylesheet" type="text/css" href="/assets/style.css">
+        <title>{{ page.internationalization.name }} | {{ page.title }}</title>
+    </head>
+    <body class="dark-theme">
+        <div class="header no-print">
+            <h1 class="margin-left margin-right">{{ page.title }}</h1>
+        </div>
+        <div class="content">
+            <div class="left-bar no-print">
+                <div class="contacts margin-left">
+                    <h3>{{ page.internationalization.contacts.title }}</h3>
+                    <p>
+                        <a href="{{ page.internationalization.contacts.email.link }}">
+                            <img src="https://sdautov.github.io/assets/icons/gmail.svg" alt="gmail" width="22px" align="left">
+                        </a>
+                        <a href="{{ page.internationalization.contacts.email.link }}">{{ page.internationalization.contacts.email.title }}</a>
+                    </p>
+                    <p>
+                        <a href="{{ page.internationalization.contacts.telegram.link }}">
+                            <img src="https://sdautov.github.io/assets/icons/telegram.svg" alt="telegram" width="22px" align="left">
+                        </a>
+                        <a href="{{ page.internationalization.contacts.telegram.link }}">{{ page.internationalization.contacts.telegram.title }}</a></p>
+                    <p>
+                        <a href="{{ page.internationalization.contacts.github.link }}">
+                            <img src="https://sdautov.github.io/assets/icons/github.svg" alt="github" width="22px" align="left">
+                        </a>
+                        <a href="{{ page.internationalization.contacts.github.link }}">{{ page.internationalization.contacts.github.title }}</a></p>
+                </div>
+            </div>
+            <div class="main">
+                {{ content }}
+            </div>
+            <div class="right-bar no-print">
+                <div class="downloads margin-right">
+                    <h3>{{ page.internationalization.options.title }}</h3>
+                    <p>
+                        <a href="{{ page.internationalization.options.toggle_lang.link }}">
+                            <button class="button">{{ page.internationalization.options.toggle_lang.title }}</button>
+                        </a>
+                    </p>
+                    <button class="button-toggle-mode to-white">{{ page.internationalization.options.white }}</button>
+                    <button class="button-toggle-mode to-dark hidden">{{ page.internationalization.options.dark }}</button>
+                    <p>
+                        <a href="{{ page.internationalization.options.pdf.link }}">
+                            <button class="button-download-pdf">{{ page.internationalization.options.pdf.title }}</button>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer no-print">
+        </div>
+        <script type="text/javascript" src="/assets/main.js"></script>
+    </body>
+</html>
